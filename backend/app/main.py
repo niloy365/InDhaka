@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 from .database import Base, engine
-from .routes.buses import router as bus_router
+from .routes.bus import router as bus_router
 
 Base.metadata.create_all(bind=engine)
 
